@@ -1,7 +1,9 @@
 :root{
   --global-primary-color: rgb(2, 12, 156);
-  --background-primary-color: rgb(231, 230, 230);
+  --background-primary-color:  #e7e7e7;
+  --background-secondary-color: #f6f6f6;
   --global-secondary-color: #a4c9f5;
+  --btn-color: #423ef9;
 }
 *{
   box-sizing: border-box;

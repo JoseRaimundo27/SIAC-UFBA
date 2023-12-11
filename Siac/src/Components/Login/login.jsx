@@ -21,7 +21,10 @@ function Login() {
               <input type="email" placeholder="Digite seu CPF (somente números)" autofocus="true" />
               <label for="password">Senha: </label>
               <input type="password" placeholder="Digite sua senha" />
-              <input type="submit" value="Acessar" class="btn" />
+              <div className="btn-acessar">
+                <input type="submit" value="Acessar" class="btn" />
+              </div>
+              
               <a href="/">Não possuo/esqueci minha senha</a>
             </form>
           </div>
