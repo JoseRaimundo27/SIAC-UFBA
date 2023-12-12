@@ -1,6 +1,7 @@
 
 .container{
     height: 100vh;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
 }
@@ -101,3 +102,26 @@ form a{
     height: 200px;
     color: white;
 }
+@media only screen and (max-width: 768px) {
+    .container{
+        max-height: 100vh;
+        max-width: 100vw;
+        font-size: 12px;
+    }
+    header{
+        font-size: 14px;
+    }
+    header >img{
+        height: 60%;
+    }
+    .rodape{
+        font-size: 12px;
+    }
+
+  }
+  @media only screen and (max-height: 897px){
+    .login{
+        height: 350px;
+        width: 350px;
+    }
+  }
