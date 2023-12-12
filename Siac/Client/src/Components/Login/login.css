@@ -70,6 +70,7 @@ form input{
     padding: 15px;
     background-color: white;
     border-radius: 20px;
+    outline: none;
 }
 .btn-acessar{
     width: 100%;
