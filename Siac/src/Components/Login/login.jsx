@@ -16,13 +16,13 @@ function Login() {
               <p>Acesso ao Sistema Acadêmico</p>
             </div>
 
-            <form method="POST" class="formLogin">
-              <label for="cpf">CPF: </label>
-              <input type="email" placeholder="Digite seu CPF (somente números)" autofocus="true" />
-              <label for="password">Senha: </label>
+            <form method="POST" className="formLogin">
+              <label htmlFor="cpf">CPF: </label>
+              <input type="email" placeholder="Digite seu CPF (somente números)" autoFocus={true} />
+              <label htmlFor="password">Senha: </label>
               <input type="password" placeholder="Digite sua senha" />
               <div className="btn-acessar">
-                <input type="submit" value="Acessar" class="btn" />
+                <input type="submit" value="Acessar" className="btn" />
               </div>
               
               <a href="/">Não possuo/esqueci minha senha</a>
