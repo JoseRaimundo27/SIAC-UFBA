@@ -9,7 +9,7 @@ export default function nopage() {
         <Header />
         <div className="message">
           <h1>PÁGINA NÃO ENCONTRADA</h1>
-          <h2>NOTFOUND 404</h2>
+          <img src="\src\Assets\error-404.png" alt="not-found" />
         </div>
         <Rodape />
       </div>
