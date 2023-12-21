@@ -1,9 +1,9 @@
 import './App.css'
-import Login from "./Components/Login/login"
+import Login from "./Pages/Login/login"
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Cadastro from './Components/Cadastro/cadastro.jsx';
-import NoPage from './Components/NoPage/nopage.jsx';
+import Cadastro from './Pages/Cadastro/cadastro.jsx';
+import NoPage from './Pages/NoPage/nopage.jsx';
 
 
 function App() {
