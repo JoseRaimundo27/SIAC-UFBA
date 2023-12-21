@@ -25,7 +25,7 @@ function Login() {
                 <input type="submit" value="Acessar" className="btn" />
               </div>
               
-              <a href="/">Não possuo/esqueci minha senha</a>
+              <a href="/cadastro">Não possuo/esqueci minha senha</a>
             </form>
           </div>
         </div>
