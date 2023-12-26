@@ -5,7 +5,7 @@ export default function form(props) {
     const [email,setEmail] = useState("")
     const [senha, setSenha] = useState("")
 
-    const handleSubmit = async e=>{
+    const handleSubmitCadastro = async e=>{
         e.preventDefault()
         const dadosLogin = {email, 
                             senha                
@@ -22,7 +22,7 @@ export default function form(props) {
                         <div className="text-login">
                             <p>Acesso ao Sistema Acadêmico</p>
                         </div>
-                        <form onSubmit={handleSubmit} method="POST" className="formLogin">
+                        <form  method="POST" className="formLogin">
                             <label htmlFor="cpf">CPF: </label>
                             <input type="email" onChange={({ target }) => setEmail(target.value)} placeholder="Digite seu CPF (somente números)" autoFocus={true} />
                             {console.log(email)}
@@ -48,7 +48,7 @@ export default function form(props) {
                         <div className="text-login">
                             <p>Cadastro no Sistema Acadêmico</p>
                         </div>
-                        <form method="POST" className="formLogin">
+                        <form method="POST" className="formLogin" onSubmit={handleSubmitCadastro}>
                             <label htmlFor="cpf">CPF: </label>
                             <input type="email" onChange={({ target }) => setEmail(target.value)} placeholder="Digite seu CPF (somente números)" autoFocus={true} />
                             <label htmlFor="password">Senha: </label>
