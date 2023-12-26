@@ -1,17 +1,29 @@
 import React, { useState } from 'react'
 import axios from "axios"
+import { useNavigate  } from "react-router-dom";
 
 export default function form(props) {
+    let navigateTo  = useNavigate()
     const [email,setEmail] = useState("")
     const [senha, setSenha] = useState("")
+    const [senha2,setSenha2] = useState("")
 
     const handleSubmitCadastro = async e=>{
         e.preventDefault()
+        if(senha != senha2){
+            return window.alert("As senhas devem ser iguais!")
+        }
         const dadosLogin = {email, 
                             senha                
         }
-        console.log(`DadosLogin é: ${JSON.stringify(dadosLogin)}`)
-        await axios.post("http://localhost:3000/cadastro", dadosLogin)
+        try{
+            await axios.post("http://localhost:3000/cadastro", dadosLogin)
+            window.alert("Cadastro realizado com sucesso!")
+            navigateTo("/")
+        }catch{
+            window.alert("Não foi possível realizar cadastro!")
+        }
+        
     }
 
     if (props.type == "login") {
@@ -53,7 +65,7 @@ export default function form(props) {
                             <input type="email" onChange={({ target }) => setEmail(target.value)} placeholder="Digite seu CPF (somente números)" autoFocus={true} />
                             <label htmlFor="password">Senha: </label>
                             <input type="password" placeholder="Digite sua senha" onChange={({ target }) => setSenha(target.value)} />
-                            <input type="password" placeholder="Digite novamente sua senha" onChange={({ target }) => setSenha(target.value)} />
+                            <input type="password" placeholder="Digite novamente sua senha" onChange={({ target }) => setSenha2(target.value)} />
                             <div className="btn-acessar">
                                 <input type="submit" value="Cadastrar" className="btn" />
                             </div>
