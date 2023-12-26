@@ -14,7 +14,6 @@ function Login() {
         <Header />
         <Form type={"login"}/>
         <Rodape />
-        {getData()}
       </div>
     </>
   )
