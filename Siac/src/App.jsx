@@ -1,10 +1,8 @@
 import './App.css'
 import Login from "./Pages/Login/login"
-import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Cadastro from './Pages/Cadastro/cadastro.jsx';
 import NoPage from './Pages/NoPage/nopage.jsx';
-
 
 function App() {
   return (
@@ -16,7 +14,9 @@ function App() {
           <Route path="*" element={<NoPage/>}></Route>
         </Routes>
       </BrowserRouter>
+      
     </>
+    
   )
 }
 
